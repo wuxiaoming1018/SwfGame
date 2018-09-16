@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dds_mainactivity_bg0"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/dds_mainactivity_bg1" />
+
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dds_mainactivity_bg2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dds_mainactivity_stone_left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/left"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dds_mainactivity_stone_right" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dds_mainactivity_bg3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:id="@+id/da"
+            android:layout_width="@dimen/dds_da_size"
+            android:layout_height="@dimen/dds_da_size"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/di">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_da0" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dds_da1_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_da1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_da2" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/di"
+            android:layout_width="@dimen/dds_da_size"
+            android:layout_height="@dimen/dds_da_size"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="120dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_di0" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dds_da1_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_di1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_di2" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/su"
+            android:layout_width="@dimen/dds_da_size"
+            android:layout_height="@dimen/dds_da_size"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/di">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_su0" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/dds_da1_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_su1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_su2" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dds_stick_height"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="@dimen/dds_stick_margin_top"
+            android:layout_toRightOf="@id/da"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dds_mainactivity_stick" />
+
+        <ImageView
+            android:layout_width="@dimen/dds_cloud_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/da"
+            android:layout_toLeftOf="@id/di"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dds_mainactivity_cloud_right" />
+
+        <ImageView
+            android:layout_width="@dimen/dds_cloud_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/su"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/di"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dds_mainactivity_cloud_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/dds_mainactivity_ground" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/caveTop"
+                android:layout_width="@dimen/dds_cave_top_width"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/caveBottom"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dds_cave_top_bottom_margin"
+                android:layout_marginLeft="@dimen/dds_cave_top_left_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_bigcave_top" />
+
+            <ImageView
+                android:id="@+id/vole"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/caveBottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-14dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_mainactivity_icon" />
+
+            <ImageView
+                android:id="@+id/caveBottom"
+                android:layout_width="@dimen/dds_cave_bottom_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dds_bigcave_bottom" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="30dp"
+        android:src="@drawable/dds_welcome_helpbutton" />
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="30dp"
+        android:src="@drawable/dds_welcome_startbutton" />
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="caterpillar_body_left_margin">0dp</dimen>
+    <dimen name="caterpillar_head_bottom_margin">7dp</dimen>
+    <dimen name="caterpillar_head_height">171dp</dimen>
+    <dimen name="caterpillar_head_width">123dp</dimen>
+    <dimen name="caterpillar_layout_height">180dp</dimen>
+    <dimen name="caterpillar_tail_height">72dp</dimen>
+    <dimen name="caterpillar_tail_width">54dp</dimen>
+    <dimen name="game_activity_button_size">63dp</dimen>
+    <dimen name="game_activity_progress_width">69dp</dimen>
+    <string name="app_name">ZJMMC</string>
+</resources>

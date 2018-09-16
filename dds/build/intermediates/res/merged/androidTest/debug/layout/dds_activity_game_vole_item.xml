@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="@dimen/game_activity_star_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vole"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/game_activity_star_bottom_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dds_game_activity_star" />
+
+    <ImageView
+        android:id="@+id/caveTop"
+        android:layout_width="@dimen/game_activity_topcave_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/caveBottom"
+        android:layout_marginBottom="@dimen/game_activity_topcave_bottom_margin"
+        android:layout_marginLeft="@dimen/game_activity_topcave_left_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dds_cave_top" />
+
+    <ImageView
+        android:id="@+id/vole"
+        android:layout_width="@dimen/game_activity_vole_width"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/caveBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/game_activity_topcave_bottom_margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dds_mainactivity_icon" />
+
+    <ImageView
+        android:id="@+id/caveBottom"
+        android:layout_width="@dimen/game_activity_bottomcave_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dds_cave_bottom" />
+
+    <ImageView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/caveBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/dds_game_activity_correct" />
+
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caveBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dds_game_activity_word_bg"
+        android:gravity="center"
+        android:text="word"
+        android:textSize="24sp" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help_background"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ffl_game_over_bg" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginBottomPercent="17%"
+        app:layout_marginLeftPercent="19.4%"
+        app:layout_marginRightPercent="13%"
+        app:layout_marginTopPercent="27%"
+        android:gravity="center"
+        android:text="帮助\n记住卡片的位置，并找出他们的对应关系，点击翻开对应的卡片即可消除，赶快行动吧"
+        android:textSize="32sp"/>
+
+    <ImageView
+        android:id="@+id/ffl_close2"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="0dp"
+        android:src="@drawable/help_close"
+        app:layout_heightPercent="13%"
+        app:layout_marginLeftPercent="89%"
+        app:layout_marginTopPercent="13%" />
+
+    <ImageView
+        android:id="@+id/ffl_start"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/help_start"
+        app:layout_heightPercent="12%"
+        app:layout_marginLeftPercent="78%"
+        app:layout_marginTopPercent="83%" />
+
+</android.support.percent.PercentFrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dds_da_size">146dp</dimen>
+    <dimen name="dds_da1_margin">4dp</dimen>
+    <dimen name="dds_stick_height">80dp</dimen>
+    <dimen name="dds_stick_margin_top">8dp</dimen>
+    <dimen name="dds_cloud_width">140dp</dimen>
+    <dimen name="dds_cave_top_width">192dp</dimen>
+    <dimen name="dds_cave_top_left_margin">63dp</dimen>
+    <dimen name="dds_cave_top_bottom_margin">-11dp</dimen>
+    <dimen name="dds_cave_bottom_width">305dp</dimen>
+    <!--<dimen name="caterpillar_tail_height">48dp</dimen>-->
+
+    <!--<dimen name="caterpillar_head_width">82dp</dimen>-->
+    <!--<dimen name="caterpillar_head_height">114dp</dimen>-->
+    <!--<dimen name="caterpillar_layout_height">125dp</dimen>-->
+    <!--<dimen name="caterpillar_head_bottom_margin">7dp</dimen>-->
+    <!--<dimen name="caterpillar_body_left_margin">1dp</dimen>-->
+    <dimen name="game_activity_button_size">70dp</dimen>
+    <dimen name="game_activity_progress_width">79dp</dimen>
+
+    <dimen name="game_activity_star_bottom_margin">-45dp</dimen>
+    <dimen name="game_activity_star_width">90dp</dimen>
+    <dimen name="game_activity_cave_bottom_margin1">130dp</dimen>
+    <dimen name="game_activity_cave_bottom_margin2">70dp</dimen>
+    <dimen name="game_activity_topcave_width">127dp</dimen>
+    <dimen name="game_activity_bottomcave_width">204dp</dimen>
+    <dimen name="game_activity_vole_width">140dp</dimen>
+    <dimen name="game_activity_topcave_bottom_margin">-8dp</dimen>
+    <dimen name="game_activity_topcave_left_margin">65dp</dimen>
+    <dimen name="game_activity_ground_left_right_margin">50dp</dimen>
+</resources>

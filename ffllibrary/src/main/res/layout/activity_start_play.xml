@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help_background"
+    tools:context="qimonjy.cn.ffllibrary.StartPlayActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="13.90%">
+
+        <!--    <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/timebg"
+                app:datumRatio="datumHeight"
+                app:heightRatio="1"
+                app:widthRatio="1" />-->
+        <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/timebg"
+            app:datumRatio="datumHeight"
+            app:heightRatio="1"
+            app:widthRatio="1">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/timedown_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="60"
+                    android:textColor="#f26524"
+                    android:textSize="12sp"
+                    android:visibility="invisible"
+                    app:layout_marginTopPercent="40.9%" />
+            </android.support.percent.PercentFrameLayout>
+        </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+
+        <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+            android:id="@+id/helpframe_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/helpnb"
+            app:datumRatio="datumHeight"
+            app:heightRatio="1"
+            app:widthRatio="1">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/helpc_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/try_3"
+                    app:layout_heightPercent="27.9%"
+                    app:layout_marginTopPercent="60.9%" />
+            </android.support.percent.PercentFrameLayout>
+        </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+
+        <net.soulwolf.widget.ratiolayout.widget.RatioImageView
+            android:id="@+id/mute_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/muteopen"
+            app:datumRatio="datumHeight"
+            app:heightRatio="1"
+            app:widthRatio="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_heightPercent="8.30%">
+
+        <ImageView
+            android:id="@+id/heart_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/redheart" />
+
+        <ImageView
+            android:id="@+id/heart_iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/redheart" />
+
+        <ImageView
+            android:id="@+id/heart_iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/redheart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="31%"
+        app:layout_marginTopPercent="14%"
+        app:layout_widthPercent="80%">
+
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="0"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘111111111111111111111111111111111111111111111"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="1"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="2"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="3"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="4"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="31%"
+        app:layout_marginTopPercent="46.1%"
+        app:layout_widthPercent="80%">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="5"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="6"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="7"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="8"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+                android:id="@+id/cardlayout_25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:tag="9"
+                app:datumRatio="datumHeight"
+                app:heightRatio="236"
+                app:widthRatio="164">
+
+                <android.support.percent.PercentFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/card_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/cardclose"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cardiv_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/cardbg"
+                        android:src="@drawable/card_bg1"
+                        android:visibility="visible" />
+
+                    <views.zeffect.cn.darklib.percent.PercentText
+                        android:id="@+id/card_tx_25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="奥秘"
+                        android:textColor="#622f26"
+                        android:textSize="32sp"
+                        app:layout_marginBottomPercent="14.8%"
+                        app:layout_marginLeftPercent="9.8%"
+                        app:layout_marginRightPercent="9.8%"
+                        app:layout_marginTopPercent="14.8%"
+                        app:screenHeight="1118"
+                        app:textSize="48" />
+                </android.support.percent.PercentFrameLayout>
+            </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/jump_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/jumpbt"
+        app:layout_heightPercent="10.8%"
+        app:layout_marginPercent="2.5%" />
+
+    <FrameLayout
+        android:id="@+id/timeframe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="16.8%"
+        app:layout_marginPercent="3.5%">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/quan_animlist"
+            android:visibility="gone" />
+
+        <net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:datumRatio="datumHeight"
+            android:padding="8dp"
+            app:heightRatio="241"
+            app:widthRatio="234">
+
+            <ImageView
+                android:id="@+id/timecount_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/count_bg" />
+
+            <ImageView
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/countdown" />
+
+            <TextView
+                android:id="@+id/timecount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#f52623"
+                android:textSize="16sp" />
+
+        </net.soulwolf.widget.ratiolayout.widget.RatioFrameLayout>
+
+    </FrameLayout>
+</android.support.percent.PercentRelativeLayout>

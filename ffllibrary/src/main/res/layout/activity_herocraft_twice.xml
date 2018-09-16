@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/help_background"
+    tools:context="qimonjy.cn.ffllibrary.HerocraftTwiceActivity">
+
+    <ImageView
+        app:layout_marginTopPercent="24%"
+        android:id="@+id/fan1_iv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fan1"
+        app:layout_marginLeftPercent="27.95%"
+        app:layout_widthPercent="20%" />
+
+    <ImageView
+        app:layout_marginTopPercent="24%"
+        app:layout_marginLeftPercent="61.50%"
+        android:id="@+id/fan3_iv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fan3"
+        app:layout_widthPercent="20%" />
+
+    <ImageView
+        app:layout_marginTopPercent="28%"
+        app:layout_marginLeftPercent="44.95%"
+        android:id="@+id/fan2_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fan2"
+        app:layout_widthPercent="20%" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/quan_iv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/quan_animlist" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/start_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="right|bottom"
+        android:adjustViewBounds="true"
+        android:src="@drawable/startplay"
+        app:layout_heightPercent="8.8%"
+        app:layout_marginPercent="2.5%" />
+    <ImageView
+        android:id="@+id/help_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="left|bottom"
+        android:adjustViewBounds="true"
+        android:src="@drawable/helpbt"
+        app:layout_heightPercent="8.8%"
+        app:layout_marginPercent="2.5%" />
+</android.support.percent.PercentFrameLayout>

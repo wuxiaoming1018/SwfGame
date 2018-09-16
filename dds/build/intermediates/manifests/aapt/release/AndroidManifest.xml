@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="qimonjy.cn.swfgame.dds"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="qimonjy.cn.swfgame.dds.DDSMainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- <activity -->
+        <!-- android:name=".DDSHelpActivity" -->
+        <!-- android:screenOrientation="landscape" -->
+        <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity> -->
+        <activity
+            android:name="qimonjy.cn.swfgame.dds.DDSGameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="qimonjy.cn.swfgame.dds.GameOverActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

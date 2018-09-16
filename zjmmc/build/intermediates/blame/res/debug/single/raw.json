@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\welcom_activity_bgm.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\welcom_activity_bgm.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\game_activity_win_sound.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\game_activity_win_sound.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\press_button_sound.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\press_button_sound.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\game_activity_bgm.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\game_activity_bgm.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\game_activity_bad_sound.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\game_activity_bad_sound.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\game_activity_choose_sound.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\game_activity_choose_sound.mp3"
+    },
+    {
+        "merged": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\build\\intermediates\\res\\merged\\debug\\raw\\game_over_sound.mp3",
+        "source": "D:\\android\\qimon_work\\SwfGame\\zjmmc\\src\\main\\res\\raw\\game_over_sound.mp3"
+    }
+]
