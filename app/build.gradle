@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.jakewharton.butterknife'
+//apply plugin: 'com.jakewharton.butterknife'
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+//    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "qimonjy.cn.swfgame"
         minSdkVersion 16
@@ -20,8 +20,8 @@ android {
 }
 
 dependencies {
-    compile 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    compile project(':zjmmc')
-    compile project(':dds')
+    //implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation project(':zjmmc')
+    implementation project(':dds')
 }

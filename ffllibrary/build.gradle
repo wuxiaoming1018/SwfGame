@@ -22,14 +22,14 @@ android {
 }
 
 dependencies {
-    compile('com.github.florent37:viewanimator:1.0.5') {
+    implementation('com.github.florent37:viewanimator:1.0.5') {
         transitive = false
     }
     //RecyclerView通用适配器https://github.com/CymChad/BaseRecyclerViewAdapterHelper
-    compile('com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40') {
+    implementation('com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40') {
         exclude group: 'com.android.support'
     }
-    compile project(':commonlibrary')
-    compile 'com.android.support:recyclerview-v7:25.0.0'
-    compile 'com.android.support:appcompat-v7:25.0.0'
+    implementation project(':commonlibrary')
+    implementation 'com.android.support:recyclerview-v7:25.0.0'
+    implementation 'com.android.support:appcompat-v7:25.0.0'
 }
